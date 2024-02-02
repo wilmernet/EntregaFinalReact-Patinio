@@ -1,0 +1,45 @@
+.NavBar{
+    /* background-color: black; */
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;   
+    gap: 30px;
+    margin-top: 10px;    
+}
+
+.button{
+    border: solid #333;
+    color:#fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px #333;  
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.button:hover{
+    /* box-shadow: 1px 1px 20px wheat;   */
+    background-color: white;
+    color: black;
+    border: solid white; 
+    filter: drop-shadow(0 0 2em wheat);
+}
+
+#cartWidget{    
+    color: white;    
+    margin-top: 10px;
+    margin-right: 100px;
+}

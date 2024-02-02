@@ -1,0 +1,55 @@
+.Header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;    
+    background-color: #11111F;
+    color: white;
+}
+
+.Header img{
+    margin-top: 15px;
+    text-align: center;    
+    max-width: 380px;
+    min-width: 280px;
+}
+
+.Header-dark{    
+    background-color: #11111F;    
+    color: white;    
+}
+
+
+.Header-ligth{
+    background-color: white;
+    color: black;
+}
+
+.Header .btnModoDark{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(88, 85, 85);
+    
+}
+
+.btnModoDark-ligth{
+    background-color: white;
+    color: black;
+    box-shadow: 9px 7px 33px 0px rgba(15,12,12,12.75);
+}
+
+#headerLogo{    
+    width: 50px;
+    border-radius: 4%;
+    padding: 10px 20px;
+    background-color: #11111F;
+    width: 30%;    
+    margin-bottom: 20px;
+}
+
+.headerLogo-ligth{    
+    box-shadow: 9px 7px 33px 0px rgba(0,0,0,0.75);
+}
