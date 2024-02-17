@@ -1,8 +1,22 @@
-.listPets{
-    margin-top: 20px;
+.listPets_ligth{
+    padding-top: 20px;
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;  
     gap: 20px;
     flex-wrap: wrap;    
-    justify-content: space-evenly;    
+    justify-content: space-evenly; 
+    background-color: #11111f08;       
+    
+}
+
+.listPets_dark{
+    padding-top: 20px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;  
+    gap: 20px;
+    flex-wrap: wrap;    
+    justify-content: space-evenly; 
+    background-color: #11111f4a;   
+    background-color: #16161973;   
+    /* background-color: red;    */
 }

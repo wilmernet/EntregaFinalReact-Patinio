@@ -1,11 +1,19 @@
 .NavBar{
-    /* background-color: black; */
-    background-color: black;
     width: 100%;
-    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;        
+}
+
+.NavBar_dark{
+    background-color: black;    
+    color: white;    
+}
+
+.NavBar_ligth{
+    /* background-color: rgb(183, 175, 175); */
+    background-color: rgb(246,191,51);
+    color: white;    
 }
 
 ul{
@@ -18,7 +26,7 @@ ul{
 }
 
 .button{
-    border: solid #333;
+    /* border: solid #333; */
     color:#fff;
     padding: 10px;
     border-radius: 15px;
@@ -28,6 +36,17 @@ ul{
     justify-content: center;
     align-items: center;
     width: 150px;
+}
+
+.button_dark{
+    border: solid #333; 
+    color:#fff;   
+}
+
+.button_ligth{
+    border: solid #f8f6f6;
+    color:#312f2f;
+    
 }
 
 .button:hover{
@@ -42,4 +61,15 @@ ul{
     color: white;    
     margin-top: 10px;
     margin-right: 100px;
+}
+
+.viewOption{
+    padding-top: 8px;
+    color: white;
+}
+.viewOption_dark{
+    color: rgb(246,191,51);
+}
+.viewOption_ligth{
+    color: rgb(47, 45, 45);
 }

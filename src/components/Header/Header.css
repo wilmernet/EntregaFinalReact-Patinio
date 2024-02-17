@@ -29,8 +29,8 @@
 
 .Header .btnModoDark{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     background-color: rgb(88, 85, 85);
     
 }
@@ -45,11 +45,10 @@
     width: 50px;
     border-radius: 4%;
     padding: 10px 20px;
-    background-color: #11111F;
     width: 30%;    
     margin-bottom: 20px;
 }
 
 .headerLogo-ligth{    
-    box-shadow: 9px 7px 33px 0px rgba(0,0,0,0.75);
+    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.7));
 }

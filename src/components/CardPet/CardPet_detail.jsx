@@ -6,26 +6,18 @@ import { CardActionArea } from '@mui/material';
 import FemaleIcon from '@mui/icons-material/Female';
 import MaleIcon from '@mui/icons-material/Male';
 import "./CardPet.css";
-import {Link} from "react-router-dom";
-
-const styles = {
-  link: {
-    textDecoration: 'none', // Quita el subrayado del enlace
-    color: 'inherit', // Hereda el color del texto del contenedor
-  }
-};
 
 const CardPet=({petsData})=> {
-  return (       
-    <Link to={`/DetailPage/${petsData.id}`} style={styles.link}>
-    <Card sx={{ maxWidth: 345, backgroundColor:"#F3F2F4", boxShadow: "9px 7px 33px 0px rgba(15,12,12,12.75)" }} className='target'>      
-      <CardActionArea>
+  return (    
+    <Card sx={{ maxWidth: 345, backgroundColor:"#11111f05" }} className='target'>      
+      <CardActionArea sx={{ display: 'flex' }}>
         <CardMedia
           component="img"
           height="340px"                    
           image={petsData.img}
           alt="green iguana"
-          className='imagen'          
+          className='imagen'
+          sx={{maxWidth: 345,justifyContent: "start"}}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
@@ -46,7 +38,6 @@ const CardPet=({petsData})=> {
         </CardContent>
       </CardActionArea>
     </Card>
-   </Link>
   );
 }
 
