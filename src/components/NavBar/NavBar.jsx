@@ -6,6 +6,7 @@ import CartWidget from '../CartWidget/CartWidget';
 // import ViewItems from '../ViewItems/ViewItems';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import TableRowsIcon from '@mui/icons-material/TableRows';
+import CategoryButton from "../CategoryButton/CategoryButton";
 
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../../redux/features/shoppingCart/shoppingCartSlice";
@@ -36,9 +37,9 @@ const handleViewOptionModule = () => {
        
         <ul>
             <Link to={"/"} className={modeDark?"button button_dark":"button button_ligth"}>Inicio</Link>
-            <Link to={`/category/${"Perro"}`} className={modeDark?"button button_dark":"button button_ligth"}>Categorías</Link>            
             <Link to={"/about"} className={modeDark?"button button_dark":"button button_ligth"}>Quienes somos</Link>            
             <Link to={"/ShopPage"} className={modeDark?"button button_dark":"button button_ligth"}>COMPRAR</Link>            
+            <CategoryButton/>
             <Link to={"/"} className={modeDark?"viewOption viewOption_dark":"viewOption viewOption_ligth"} onClick={handleViewOptionModule}><ViewModuleIcon/></Link>
             <Link to={"/"} className={modeDark?"viewOption viewOption_dark":"viewOption viewOption_ligth"} onClick={handleViewOptionRow}><TableRowsIcon/></Link>
         </ul>

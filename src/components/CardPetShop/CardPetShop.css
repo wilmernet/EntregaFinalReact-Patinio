@@ -1,0 +1,94 @@
+.targetShop{
+    width: 80%;
+    margin-bottom: 20px;    
+    box-shadow: 9px 7px 33px 0px rgba(15,12,12,12.75);
+    /* min-width: 80vw; */
+    min-width: 350px;
+    background-color:#ffffff9f;  
+    border-radius: 5px;      
+    display: grid;
+    grid-template-areas: 
+        "imagen buttonBox"
+        "info info";
+    grid-template-columns: 50% 50%;        
+}
+
+.priceShop{
+    margin: 30px;
+    color:red; 
+    display: flex;
+    justify-content: center;   
+}
+
+.petNameShop{        
+    display: flex;
+    justify-content: center;   
+}
+
+.containerCarouselShop{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color:#ffffff9f;  
+    border-radius: 5px;    
+    box-shadow: 9px 7px 33px 0px rgba(15,12,12,12.75);  
+}
+
+.ButtonBoxShop{       
+    grid-area: buttonBox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoContainerShop{
+    grid-area: info;       
+    display: flex;
+    justify-content: center;    
+}
+
+.imagenShop{    
+    margin: 30px;
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerBlockShop{
+    padding: 20px;
+    padding-left: 40px;
+    width: 600px;    
+    background-color:rgba(128, 128, 128, 0.305);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 8px;
+}
+
+.blockShop{
+    display: inline-block;
+    width: 50%;
+    
+}
+
+.subtitleShop{
+    color: rgb(57, 57, 57);
+}
+
+.containerShop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 80%;
+    margin-bottom: 20px;    
+    box-shadow: 9px 7px 33px 0px rgba(15,12,12,12.75);
+    /* min-width: 80vw; */
+    min-width: 350px;
+    background-color:#ffffff9f;  
+    border-radius: 5px;      
+}

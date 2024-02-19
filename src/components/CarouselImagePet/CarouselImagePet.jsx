@@ -44,12 +44,13 @@ const CarouselImagePet= (imgList)=> {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
-        enableMouseEvents
+        enableMouseEvents        
       >
         
         {images.map((step, index) => (          
           // <div key={step.label}>
             // {Math.abs(activeStep - index) <= 2 ? (
+             <div key={step.label}>
               <Link to={`/DetailPage/${imgList.id}`} style={styles.link}>
                 <Box
                   component="img"
@@ -64,8 +65,8 @@ const CarouselImagePet= (imgList)=> {
                   // alt={step.label}
                 />
               </Link>              
-            // ) : null}
-          // </div>
+            {/* // ) : null} */}
+           </div>
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper

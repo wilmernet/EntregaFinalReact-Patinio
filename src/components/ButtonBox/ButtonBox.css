@@ -1,0 +1,29 @@
+.containerButtonBox{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 1
+    200px;
+    box-shadow: 9px 7px 33px 0px rgba(15,12,12,12.75);  
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+
+.buttonShop{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(63, 63, 63);
+    border: gray; 
+    width: 250PX;
+}

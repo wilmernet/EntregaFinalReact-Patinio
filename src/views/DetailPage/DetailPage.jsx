@@ -1,5 +1,4 @@
-import CardPet from "../../components/CardPet/CardPet";
-import CardPet_horizontal from "../../components/CardPet/CardPet_horizontal";
+import CardPetShop from "../../components/CardPetShop/CardPetShop";
 import { db } from "../../firebase/firebaseConfig";
 import { collection,where, documentId, query, getDocs } from "firebase/firestore";
 import React,{useEffect, useState} from 'react';
@@ -44,7 +43,7 @@ const DetailPage = () => {
     <div className={modeDark?"listPets_dark":"listPets_ligth"}>
       {petData.map((pet)=>{
         return  <>                  
-            {viewOption?<CardPet key={pet.id} petsData={pet}/>:<CardPet_horizontal key={pet.id} petsData={pet}/>}                
+            <CardPetShop key={pet.id} petsData={pet}/>
         </>
       })}      
     </div>
