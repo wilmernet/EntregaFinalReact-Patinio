@@ -36,7 +36,9 @@ const handleViewOptionModule = () => {
        
         <ul>
             <Link to={"/"} className={modeDark?"button button_dark":"button button_ligth"}>Inicio</Link>
+            <Link to={`/category/${"Perro"}`} className={modeDark?"button button_dark":"button button_ligth"}>Categorías</Link>            
             <Link to={"/about"} className={modeDark?"button button_dark":"button button_ligth"}>Quienes somos</Link>            
+            <Link to={"/ShopPage"} className={modeDark?"button button_dark":"button button_ligth"}>COMPRAR</Link>            
             <Link to={"/"} className={modeDark?"viewOption viewOption_dark":"viewOption viewOption_ligth"} onClick={handleViewOptionModule}><ViewModuleIcon/></Link>
             <Link to={"/"} className={modeDark?"viewOption viewOption_dark":"viewOption viewOption_ligth"} onClick={handleViewOptionRow}><TableRowsIcon/></Link>
         </ul>

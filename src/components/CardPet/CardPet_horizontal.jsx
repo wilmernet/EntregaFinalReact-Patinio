@@ -48,8 +48,7 @@ const CardPet=({petsData})=> {
             </Typography>            
         </CardContent>
       </CardActionArea> 
-      </Link> 
-      {/* <CarouselImagePet key={petsData.id} imgList={petsData}/>  */}
+      </Link>       
       <CarouselImagePet key={petsData.id} imgList={petsData.imgList} id={petsData.id}/> 
     </Card>
   );

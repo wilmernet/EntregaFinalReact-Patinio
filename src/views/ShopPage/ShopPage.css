@@ -1,0 +1,26 @@
+.contenedor{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 350px;
+    border: solid #11111F;    
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;    
+    background-color: whitesmoke;
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #16161973;   
+}
+
+/* .TextField{
+    display: block;
+} */

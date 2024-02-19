@@ -21,9 +21,7 @@ const styles = {
 
 
 const CarouselImagePet= (imgList)=> {
-  console.log("documento original",imgList.id);
   let images=imgList.imgList;
-  console.log(images);
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -41,7 +39,6 @@ const CarouselImagePet= (imgList)=> {
   };
 
   return (
-    // <Box sx={{ maxWidth: 400, flexGrow: 1 , backgroundColor:"#ffffff9f", marginTop:"30px" }}>      
     <Box sx={{ maxWidth: 400, maxHeight: "340px", backgroundColor: "white", flexGrow: 1 , marginTop:"30px", marginLeft:"30px" }}>      
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

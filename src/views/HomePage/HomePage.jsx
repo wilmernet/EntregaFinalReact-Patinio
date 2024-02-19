@@ -1,7 +1,7 @@
 import CardPet from "../../components/CardPet/CardPet";
 import CardPet_horizontal from "../../components/CardPet/CardPet_horizontal";
 import { db } from "../../firebase/firebaseConfig";
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 import React,{useEffect, useState} from 'react';
 import "./HomePage.css";
 import { Link } from "react-router-dom";
@@ -18,7 +18,6 @@ const HomePage = () => {
   const modeDark = useSelector((state) => state.modeDark.modeDark); //sale del alias del store y el segundo sale del nombre de la variable del slice
   const viewOption = useSelector((state)=> state.activeViewOption.activeViewOption); //sale del alias del store y el segundo sale del nombre de la variable del slice
 
-  console.log("se encuentra en ",viewOption);
   const handleModeDark = () => {
     dispatch(modeDarkToggle());
   };
