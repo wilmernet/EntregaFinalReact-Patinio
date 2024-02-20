@@ -41,7 +41,10 @@ const CardPet=({petsData})=> {
           </Typography>
           <Typography gutterBottom variant="h6" component="div" >
             COP$ {petsData.precio}.oo
-          </Typography>          
+          </Typography>   
+          <Typography variant="subtitle1" component="div" >
+              <p> <b>Cantidad Disponible:</b>  {petsData.cant}</p>
+          </Typography>       
         </CardContent>
       </CardActionArea>
     </Card>

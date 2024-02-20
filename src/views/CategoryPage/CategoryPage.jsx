@@ -33,9 +33,7 @@ const CategoryPage = () => {
       const docs=[];
       querySnapshot.forEach((doc) => {                
         docs.push({...doc.data(), id: doc.id})
-      });       
-      console.log("xxxxxxxx");
-      console.log(docs);
+      });             
       setPetsData(docs);    
     };
 

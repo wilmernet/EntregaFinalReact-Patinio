@@ -1,16 +1,17 @@
 .contenedor{
     margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 350px;
+    width: 50%;    
     border: solid #11111F;    
     box-shadow: 5px 5px 10px black;
     overflow: hidden;    
     background-color: whitesmoke;
+    min-height: 600px;
 }
 
 .todo{
@@ -18,9 +19,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-color: #16161973;   
+    background-color: #16161973;     
+    min-height: 500px;  
 }
 
-/* .TextField{
-    display: block;
-} */
+.precio{    
+    color:red
+}

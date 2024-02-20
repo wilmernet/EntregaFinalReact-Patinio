@@ -8,7 +8,7 @@ import "./ButtonBox.css";
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 
-import { increment, decrement, addShop, add } from "../../redux/features/shoppingCart/shoppingCartSlice";
+import {addShop} from "../../redux/features/shoppingCart/shoppingCartSlice";
 
  
 const ButtonBox = (petsData) => {  

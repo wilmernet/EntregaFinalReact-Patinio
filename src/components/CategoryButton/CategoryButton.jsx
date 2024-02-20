@@ -27,10 +27,12 @@ const CategoryButton = () => {
             onChange={handleChange}
           >         
           <MenuItem value={null}><Link to={`/`}>Todas</Link></MenuItem>
-          <MenuItem value={'Perro'}><Link to={`/category/${"Perro"}`}> Perro</Link></MenuItem>
+          
           <MenuItem value={'Cacatua'}><Link to={`/category/${"Cacatua"}`}> Cacatua</Link></MenuItem>
-          <MenuItem value={'Pareja Pollo'}><Link to={`/category/${"Pareja Pollo"}`}>Pareja de Pollitos</Link></MenuItem>
           <MenuItem value={'Conejo'}><Link to={`/category/${"Conejo"}`}>Conejo</Link></MenuItem>          
+          <MenuItem value={'Perico'}><Link to={`/category/${"Perico"}`}>Periquitos</Link></MenuItem>
+          <MenuItem value={'Perro'}><Link to={`/category/${"Perro"}`}> Perro</Link></MenuItem>
+          <MenuItem value={'Pollito'}><Link to={`/category/${"Pollito"}`}>Pollitos</Link></MenuItem>          
         </Select>
       </FormControl>
     </Box>

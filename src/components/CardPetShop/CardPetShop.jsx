@@ -31,7 +31,7 @@ const CardPetShop=({petsData})=> {
             sx={{maxWidth: 345}}
           />        
         </div>        
-        <div className="ButtonBoxShop"><ButtonBox petSelected={petsData}/></div>
+        <div className="ButtonBoxShop"><ButtonBox petSelected={petsData} /></div>
         <div className='InfoContainerShop'>
           <CardContent>
               <div className='petNameShop'>

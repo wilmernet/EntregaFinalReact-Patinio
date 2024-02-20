@@ -18,12 +18,16 @@ export const shoppingCartSlice = createSlice({
     addShop: (state, action) => {
       state.petsShooping += action.payload.petsShooping;
       for(let index=0; index< action.payload.details.length; index++){
-        state.details.push(action.payload.details[index]);
-      }
-      
+        state.details.push([action.payload.details[index],action.payload.petsShooping]);
+      }      
     },
-    add: (state, action) => {
-      state.petsShooping += action.payload;
+    deleteItem: (state, action) => {            
+      state.details.splice(action.payload, 1);      
+    },
+
+    clear: (state) => {            
+      state.petsShooping=0;
+      state.details=[];      
     },
     // incrementByAmount: (state, action) => {
     //   state.petsShooping += action.payload;
@@ -34,6 +38,6 @@ export const shoppingCartSlice = createSlice({
 // actions + reducer
 
 // export const { increment, decrement, incrementByAmount } = shoppingCartSlice.actions; // actions
-export const { increment, decrement, addShop, add } = shoppingCartSlice.actions; // actions
+export const { increment, decrement, addShop, deleteItem, clear } = shoppingCartSlice.actions; // actions
 
 export default shoppingCartSlice.reducer;
